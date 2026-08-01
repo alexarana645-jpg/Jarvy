@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hud_bg">
+
+    <com.example.jarvis.HudView
+        android:id="@+id/hudView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="J.A.R.V.I.S"
+            android:textColor="@color/hud_cyan"
+            android:textSize="22sp"
+            android:letterSpacing="0.3"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="STANDBY"
+            android:textColor="@color/hud_cyan_dim"
+            android:textSize="12sp"
+            android:letterSpacing="0.2"
+            android:fontFamily="monospace" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="40dp">
+
+            <Button
+                android:id="@+id/startButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_hud_button"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.15"
+                android:text="ACTIVATE"
+                android:textColor="@color/hud_cyan" />
+
+            <Button
+                android:id="@+id/stopButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hud_button"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.15"
+                android:text="STANDBY"
+                android:textColor="@color/hud_cyan_dim" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
